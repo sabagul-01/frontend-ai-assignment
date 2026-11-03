@@ -1,9 +1,8 @@
+export const dynamic = "force-dynamic";
+
 async function getData() {
   const response = await fetch(
-    "https://jsonplaceholder.typicode.com/posts/1",
-    {
-      cache: "no-store",
-    }
+    "https://jsonplaceholder.typicode.com/posts/1"
   );
 
   return response.json();
